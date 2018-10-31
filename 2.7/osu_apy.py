@@ -74,7 +74,7 @@ def get_match(key, multi_id):
 	list_of_params.append(parameterize_id("mp", multi_id))	
 
 	## Build the request URLand return the response.
-	return urllib.urlopen(build_request(list_of_params, "https://osu.ppy.sh/api/get_beatmaps?")).read()
+	return urllib.urlopen(build_request(list_of_params, "https://osu.ppy.sh/api/get_match?")).read()
 
 ## get_scores - Returns information about the top 50 scores of a specified beatmap.
 ## key        - Your API key.
